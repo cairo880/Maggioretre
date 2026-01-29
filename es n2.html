@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Serie di esercizi per comprendere Javascprit + html</p>
+
+    <p>1-Dati 2 numeri in input indicare il maggiore</p>
+        <div>
+             <input type="number" name="n1" id="n1">
+             <input type="number" name="n2" id="n2">
+<button onclick="CalcolaMaggiore()" > Confronta i due numeri</button>
+        </div>
+
+<script>
+function maggiore(a,b){
+     if (a>b)
+       {  return a;  }
+       else
+       {  return b;  }
+}
+function CalcolaMaggiore(){
+
+
+let num1=parseFloat(document.getElementById("n1").value);
+let num2=parseFloat(document.getElementById("n2").value);
+
+let max;
+max=maggiore(num1,num2)
+
+document.getElementById("risultato").innerHTML="il numero maggiore è"+ max
+
+}
+</script>
+
+<p id="risultato"></p>
+
+</body>
+</html>
